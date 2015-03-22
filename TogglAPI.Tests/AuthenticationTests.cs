@@ -7,12 +7,12 @@ namespace TogglAPI.Tests
     [TestClass]
     public class AuthenticationTests
     {
-        public TogglAPI togglAPI;
-        [TestMethod]
-        public async Task ShouldAuthenticate()
+        private TogglAPI togglAPI;
+        [TestInitialize]
+        public async Task InitAPI()
         {
             //arrange
-            string username = "test@test.test";
+            string username = "test";
             string password = "test";
             togglAPI = new TogglAPI();
 
@@ -25,12 +25,13 @@ namespace TogglAPI.Tests
         }
 
         [TestMethod]
-        public async Task ShouldReturnWorkspace(int a)
+        public async Task ShouldReturnWorkspace()
         {
             //arrange
 
             //act
             var workspace = await togglAPI.GetWorkspacesAsync();
+
             //assert
             Assert.IsNotNull(workspace);
         }
