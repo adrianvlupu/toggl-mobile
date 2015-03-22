@@ -12,8 +12,8 @@ namespace TogglAPI.Tests
         public async Task ShouldAuthenticate()
         {
             //arrange
-            string username = "adrian.lupu@fullscreendigital.ro";
-            string password = "FacemMetal";
+            string username = "test@test.test";
+            string password = "test";
             togglAPI = new TogglAPI();
 
             //act
