@@ -1,2 +1,0 @@
-D:\Projects\TogglMobile\TogglAPI.Tests\TogglAPI.Tests.csproj;x86
-D:\Projects\TogglMobile\TogglAPI\TogglAPI.csproj;x86

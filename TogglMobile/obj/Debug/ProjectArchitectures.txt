@@ -1,2 +1,0 @@
-D:\Projects\TogglMobile\TogglAPI\TogglAPI.csproj;neutral
-D:\Projects\TogglMobile\TogglMobile\TogglMobile.csproj;neutral
