@@ -106,7 +106,6 @@ namespace TogglAPI
                 throw new Exception("HttpPost: Response error");
                 throw new Exception(ex.Message);
             }
-            return null;
         }
 
         public static async Task<string> HttpPutAsync(string uri, string body, Dictionary<string, string> headers = null)
@@ -153,7 +152,6 @@ namespace TogglAPI
                 throw new Exception("HttpPut: Response error");
                 throw new Exception(ex.Message);
             }
-            return null;
         }
     }
 }
