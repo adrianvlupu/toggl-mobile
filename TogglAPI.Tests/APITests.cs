@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace TogglAPI.Tests
 {
     [TestClass]
-    public class AuthenticationTests
+    public class APITests
     {
         private TogglAPI togglAPI;
         [TestInitialize]
@@ -31,6 +31,7 @@ namespace TogglAPI.Tests
 
             //act
             var workspace = await togglAPI.GetWorkspacesAsync();
+            var me = await togglAPI.GetMeAsync();
 
             //assert
             Assert.IsNotNull(workspace);
